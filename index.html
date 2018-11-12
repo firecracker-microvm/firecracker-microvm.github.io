@@ -19,8 +19,6 @@
                     <nav>
                         <a class="sta-hoverOFF" href="#benefits">Benefits</a>
                         <a class="sta-hoverOFF" href="#how_it_works">HOW IT WORKS </a>
-                        <a class="sta-hoverOFF" href="#features">Features</a>
-                        <a class="sta-hoverOFF" href="#who">Who</a>
                         <a class="sta-hoverOFF" href="#faq">FAQ</a>
                         <a class="sta-hoverOFF" href="#learn_more">Learn more</a>
                     </nav>
@@ -99,11 +97,12 @@
             <article class="m-content">
                 <header id="how_it_works" name="how_it_works">How It Works</header>
                 <div class="m-img">
-                    <img src="img/graph-6-09@2x.png" alt="">
+                    <img src="img/graph-6-09@2x.png" class="m-desktop" alt="">
+                    <img src="img/graph-mobile-27@2x.png" class="m-device" alt="">
                 </div>
                 <section>
-                    <p>Until now, you needed to make a tradeoff between fast startup times and security. Containers offer fast startup times, while VMs offer hardware virtualization-based security boundaries that are more secure. In addition, the memory overhead of existing virtualization technologies makes it difficult to pack a high density of VMs onto a single machine for efficient hardware utilization. Firecracker enables you to deploy workloads in lightweight virtual machines, called microVMs, which combine the security and workload isolation properties of traditional VMs with the speed and resource efficiency of containers. </p>
-                    <p>Firecracker implements a virtual machine monitor (VMM) based on the Linux Kernel-based Virtual Machine (KVM) to create and manage microVMs. Firecracker has a minimalist design. It excludes unnecessary devices and guest functionality to reduce the memory footprint and attack surface area of each microVM.  This improves security, decreases the startup time, and increases hardware utilization. Firecracker currently supports Intel CPUs, with planned AMD and ARM support. Firecracker will also be integrated with popular container runtimes. Please view our roadmap/issues list for details.  </p>
+                    <p>Firecracker runs in the user space and leverages the Linux Kernel-based Virtual Machine (KVM) to create microVMs. The fast startup time and low memory overhead of each microVM enables you to pack thousands of microVMs onto the same machine. This means that every container or function can be encapsulated with a virtual machine barrier, enabling workloads from different customers to run on the same machine, without any tradeoffs to security or efficiency. Firecracker is an alternative to QEMU, an established VMM with a general purpose and broad feature set that allows it to host a variety of guest operating systems.</p>
+                    <p>You can control the Firecracker process via a REST-ful API that enables common actions such as configuring the number of vCPUs or starting the machine. It provides built-in rate limiters, which enable the fair sharing of network and storage resources by thousands of microVMs on the same machine. You can create and configure rate limiters via the Firecracker API and define flexible rate limiters that support bursts or specific bandwidth/operations limitations. Firecracker also provides a metadata service that securely shares configuration information between the host and guest operating system. You can set up and configure the metadata service using the Firecracker API.   </p>
                 </section>
             </article>
         </section>
