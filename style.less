@@ -81,10 +81,11 @@
     
     .m-img{
         margin-bottom: 73px;
+        margin-top: 30px;
         
         img{
             display: block;
-            max-width: 836px;
+            max-width: 842px;
             width: 100%;
             margin: 0 auto;
     
@@ -128,6 +129,7 @@
         
         .m-img{
             margin-bottom: 40px;
+            margin-top: 0;
             
             img{
                 
@@ -155,7 +157,7 @@
     .m-content{
         .maxW(@maxWL);
         background-color: @color4;
-        padding: 74px 96px 77px 117px;
+        padding: 82px 96px 82px 117px;
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
@@ -173,7 +175,7 @@
     }
     
     .m-text{
-        font: 17px/2.06 @font3;
+        font: 23px/1.52 @font1;
         color: @color5;
         width: ~'calc(50% - 49px)';
     }
@@ -974,6 +976,10 @@
             margin-left: 30px;
             transition: .3s ease opacity;
             
+            &.m-logo{
+                display: none;
+            }
+            
             &.sta-hoverOFF:hover{
                 opacity: .75;
             }
@@ -984,7 +990,7 @@
         display: none;
     }
     
-    @media @lMobileL{
+    @media @mMobileL{
         
         #sta-menu{
             
@@ -1001,6 +1007,14 @@
                     
                     nav{
                         transform: translateX(0);
+                        
+                        a{
+                            
+                            &.m-logo{
+                                opacity: 1;
+                                transition: .3s .3s ease opacity;
+                            }
+                        }
                     }
                     
                     label{
@@ -1055,6 +1069,24 @@
             transform: translateX(100%);
             transition: .3s ease transform;
             margin-top: 0;
+            
+            a{
+                
+                &.m-logo{
+                    display: block;
+                    position: absolute;
+                    top: 16px;
+                    left: 40px;
+                    opacity: 0;
+                    margin: 0;
+                    transition: .3s .3s ease;
+                    
+                    img{
+                        display: block;
+                        height: 60px;
+                    }
+                }
+            }
         }
         
         label{
@@ -1081,7 +1113,6 @@
                 position: absolute;
                 background: @color1;
                 height: 3px;
-                transition: .3s;
                 
                 &:before, &:after{
                     content: '';
@@ -1105,10 +1136,6 @@
         
         .m-img{
             position: relative;
-            z-index: 11;
-//            background-image: url(img/firecracker-13@3x.png);
-            background-size: auto 60px;
-            background-repeat: no-repeat;
         
             img{
                 height: 60px;
@@ -1193,6 +1220,18 @@
             transform: translateX(100%);
             transition: .3s ease transform;
             margin-top: 0;
+            
+            a{
+                
+                &.m-logo{
+                    top: 10px;
+                    left: 18px;
+                    
+                    img{
+                        height: 35px;
+                    }
+                }
+            }
         }
         
         label{
@@ -1243,9 +1282,6 @@
         
         .m-img{
             position: relative;
-            z-index: 11;
-//            background-image: url(img/firecracker-13@3x.png);
-            background-size: auto 35px;
         
             img{
                 height: 35px;

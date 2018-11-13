@@ -153,8 +153,13 @@ img {
 }
 .css-button.sta-hoverOFF:hover {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), radial-gradient(circle at 100% 0, #7e7871, #68635e 17%, #514d49);
-  transform: translateY(2px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+}
+.css-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), radial-gradient(circle at 100% 0, #7e7871, #68635e 17%, #514d49);
 }
 .css-button span {
   transform: translateY(3px);
@@ -191,8 +196,15 @@ img {
 }
 .css-button2.sta-hoverOFF:hover {
   background-color: #ffffff;
-  transform: translateY(2px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+  color: #ff542a;
+}
+.css-button2:active {
+  background-color: #ffffff;
+  transform: translateY(2px);
+  background-image: radial-gradient(circle at 95% 10%, #ff9e5e, #f97147 47%, #ff542a, #ff542a);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   color: #ff542a;
 }
 .css-button2 span {
@@ -225,10 +237,17 @@ img {
   transition: 0.3s ease opacity, 0.3s ease box-shadow, 0.3s ease transform;
 }
 .css-button3.sta-hoverOFF:hover {
-  transform: translateY(2px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
 }
 .css-button3.sta-hoverOFF:hover > * {
+  opacity: .75;
+}
+.css-button3:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.css-button3:active > * {
   opacity: .75;
 }
 .css-button3 > * {
@@ -260,7 +279,7 @@ img {
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.06);
   }
 }
-@media (max-width: 1090px) {
+@media (max-width: 900px) {
   body.over-hidden {
     overflow: hidden;
   }

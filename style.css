@@ -153,8 +153,13 @@ img {
 }
 .css-button.sta-hoverOFF:hover {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), radial-gradient(circle at 100% 0, #7e7871, #68635e 17%, #514d49);
-  transform: translateY(2px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+}
+.css-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), radial-gradient(circle at 100% 0, #7e7871, #68635e 17%, #514d49);
 }
 .css-button span {
   transform: translateY(3px);
@@ -191,8 +196,15 @@ img {
 }
 .css-button2.sta-hoverOFF:hover {
   background-color: #ffffff;
-  transform: translateY(2px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+  color: #ff542a;
+}
+.css-button2:active {
+  background-color: #ffffff;
+  transform: translateY(2px);
+  background-image: radial-gradient(circle at 95% 10%, #ff9e5e, #f97147 47%, #ff542a, #ff542a);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   color: #ff542a;
 }
 .css-button2 span {
@@ -225,10 +237,17 @@ img {
   transition: 0.3s ease opacity, 0.3s ease box-shadow, 0.3s ease transform;
 }
 .css-button3.sta-hoverOFF:hover {
-  transform: translateY(2px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
 }
 .css-button3.sta-hoverOFF:hover > * {
+  opacity: .75;
+}
+.css-button3:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.css-button3:active > * {
   opacity: .75;
 }
 .css-button3 > * {
@@ -260,7 +279,7 @@ img {
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.06);
   }
 }
-@media (max-width: 1090px) {
+@media (max-width: 900px) {
   body.over-hidden {
     overflow: hidden;
   }
@@ -373,10 +392,11 @@ img {
 }
 .mdl-article2 .m-img {
   margin-bottom: 73px;
+  margin-top: 30px;
 }
 .mdl-article2 .m-img img {
   display: block;
-  max-width: 836px;
+  max-width: 842px;
   width: 100%;
   margin: 0 auto;
 }
@@ -420,6 +440,7 @@ img {
   }
   .mdl-article2 .m-img {
     margin-bottom: 40px;
+    margin-top: 0;
   }
   .mdl-article2 .m-img img.m-desktop {
     display: none;
@@ -441,7 +462,7 @@ img {
   margin: 0 auto;
   max-width: 1157px;
   background-color: #f8fafb;
-  padding: 74px 96px 77px 117px;
+  padding: 82px 96px 82px 117px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -457,7 +478,7 @@ img {
   margin-top: -30px;
 }
 .mdl-banner .m-text {
-  font: 17px/2.06 'AmazonEmber', sans-serif;
+  font: 23px/1.52 'Brown', sans-serif;
   color: #665d51;
   width: calc(50% - 49px);
 }
@@ -1155,18 +1176,25 @@ img {
   margin-left: 30px;
   transition: .3s ease opacity;
 }
+.mdl-header nav a.m-logo {
+  display: none;
+}
 .mdl-header nav a.sta-hoverOFF:hover {
   opacity: .75;
 }
 .mdl-header label {
   display: none;
 }
-@media (max-width: 1090px) {
+@media (max-width: 900px) {
   .mdl-header #sta-menu:checked ~ .m-content .m-img img {
     opacity: 0;
   }
   .mdl-header #sta-menu:checked ~ .m-content nav {
     transform: translateX(0);
+  }
+  .mdl-header #sta-menu:checked ~ .m-content nav a.m-logo {
+    opacity: 1;
+    transition: .3s .3s ease opacity;
   }
   .mdl-header #sta-menu:checked ~ .m-content label > span {
     background: none;
@@ -1212,6 +1240,19 @@ img {
     transition: .3s ease transform;
     margin-top: 0;
   }
+  .mdl-header nav a.m-logo {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 40px;
+    opacity: 0;
+    margin: 0;
+    transition: .3s .3s ease;
+  }
+  .mdl-header nav a.m-logo img {
+    display: block;
+    height: 60px;
+  }
   .mdl-header label {
     z-index: 11;
     width: 24px;
@@ -1235,7 +1276,6 @@ img {
     position: absolute;
     background: #ffffff;
     height: 3px;
-    transition: .3s;
   }
   .mdl-header label > span:before,
   .mdl-header label > span:after {
@@ -1255,9 +1295,6 @@ img {
   }
   .mdl-header .m-img {
     position: relative;
-    z-index: 11;
-    background-size: auto 60px;
-    background-repeat: no-repeat;
   }
   .mdl-header .m-img img {
     height: 60px;
@@ -1321,6 +1358,13 @@ img {
     transition: .3s ease transform;
     margin-top: 0;
   }
+  .mdl-header nav a.m-logo {
+    top: 10px;
+    left: 18px;
+  }
+  .mdl-header nav a.m-logo img {
+    height: 35px;
+  }
   .mdl-header label {
     z-index: 11;
     width: 24px;
@@ -1364,8 +1408,6 @@ img {
   }
   .mdl-header .m-img {
     position: relative;
-    z-index: 11;
-    background-size: auto 35px;
   }
   .mdl-header .m-img img {
     height: 35px;
