@@ -296,11 +296,11 @@ img {
   font: 35px/1.4 'Brown', sans-serif;
   color: #4f483f;
   max-width: 1007px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 @media (max-width: 767px) {
   .mdl-article header {
-    font: 700 16px/1.56 'Brown', sans-serif;
+    font: 700 20px/1.35 'Brown', sans-serif;
   }
 }
 .mdl-article section {
@@ -315,8 +315,15 @@ img {
 }
 @media (max-width: 767px) {
   .mdl-article section {
-    font: 13px/1.54 'Brown', sans-serif;
+    font: 15px/1.67 'Brown', sans-serif;
   }
+}
+.mdl-article section a {
+  color: #ff542a;
+  text-decoration: underline;
+}
+.mdl-article section a:hover {
+  text-decoration: none;
 }
 @media (max-width: 900px) {
   .mdl-article section {
@@ -327,7 +334,7 @@ img {
 }
 @media (max-width: 767px) {
   .mdl-article {
-    padding-top: 40px;
+    padding-top: 30px;
   }
   .mdl-article header {
     margin-bottom: 30px;
@@ -342,11 +349,22 @@ img {
   margin: 0 auto;
   max-width: 1157px;
 }
+.mdl-article2 .m-header {
+  font: 15px/1.8 'Work Sans', sans-serif;
+  padding: 15px 25px;
+  background-color: #ffffff;
+  color: rgba(79, 72, 63, 0.75);
+  max-width: 570px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.06);
+}
 .mdl-article2 header {
   font: 700 50px/1.04 'Brown', sans-serif;
   color: #4f483f;
   text-align: center;
-  margin-bottom: 85px;
+  margin-bottom: 72px;
 }
 @media (max-width: 767px) {
   .mdl-article2 header {
@@ -377,7 +395,7 @@ img {
 }
 @media (max-width: 767px) {
   .mdl-article2 section {
-    font: 13px/1.54 'Brown', sans-serif;
+    font: 15px/1.67 'Brown', sans-serif;
   }
 }
 @media (max-width: 900px) {
@@ -390,12 +408,18 @@ img {
 @media (max-width: 767px) {
   .mdl-article2 {
     padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .mdl-article2 .m-header {
+    padding: 18px 12px;
+    font: 13px/1.54 'Work Sans', sans-serif;
+    margin-bottom: 20px;
   }
   .mdl-article2 header {
     margin-bottom: 44px;
   }
   .mdl-article2 .m-img {
-    margin-bottom: 49px;
+    margin-bottom: 40px;
   }
   .mdl-article2 .m-img img.m-desktop {
     display: none;
@@ -509,11 +533,11 @@ img {
   }
   .mdl-banner .m-text {
     width: 100%;
-    font: 11px/1.73 'Circular Std', sans-serif;
-    opacity: .7;
+    font: 15px/1.67 'Circular Std', sans-serif;
+    opacity: .75;
   }
   .mdl-banner .m-imgs {
-    margin-top: 14px;
+    margin-top: 6px;
   }
   .mdl-banner .m-imgs img {
     margin-top: 6px;
@@ -624,7 +648,7 @@ img {
   font: 15px/1.8 'Work Sans', sans-serif;
   color: #4f483f;
   opacity: .75;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 .mdl-benefits .m-header {
   display: flex;
@@ -663,7 +687,7 @@ img {
   .mdl-benefits {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-image: linear-gradient(to bottom, #ffffff, #f8fafb);
+    background-image: linear-gradient(to bottom, #ffffff, #f8fafb 4%, #f8fafb 97%, #ffffff);
   }
   .mdl-benefits:before,
   .mdl-benefits:after {
@@ -687,7 +711,7 @@ img {
   }
   .mdl-benefits .m-item section {
     margin-top: 30px;
-    font: 13px/1.54 'Brown', sans-serif;
+    font: 15px/1.67 'Brown', sans-serif;
   }
   .mdl-benefits .m-header img {
     width: 70px;
@@ -783,8 +807,7 @@ img {
   margin-top: 17px;
 }
 .mdl-faq .m-banner {
-  background: #524e4a url(img/module-facets@2x.png) no-repeat center;
-  background-size: cover;
+  background: url(img/module-facets.svg) no-repeat center;
   padding: 77px 20px 75px;
   margin-top: 60px;
   display: flex;
@@ -804,28 +827,28 @@ img {
 }
 @media (max-width: 767px) {
   .mdl-faq {
-    padding-top: 81px;
-    padding-bottom: 40px;
-    background-image: linear-gradient(to bottom, #ffffff, #f8fafb);
+    padding-top: 41px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to bottom, #ffffff, #f8fafb 2%, #f8fafb 96%, #ffffff);
   }
   .mdl-faq .m-content:before {
     width: 22px;
     height: 18px;
-    top: -7px;
+    top: -15px;
     background-size: 22px 18px;
     transform: translateX(-9px);
   }
   .mdl-faq .m-title:before {
     width: 60px;
     height: 65px;
-    top: 15px;
+    top: 10px;
     background-size: 60px 65px;
     transform: translateX(-40px);
   }
   .mdl-faq .m-title:after {
     width: 43px;
     height: 47px;
-    top: 3px;
+    top: 0;
     background-size: 43px 47px;
     transform: translateX(40px);
   }
@@ -843,15 +866,16 @@ img {
     margin-top: 10px;
   }
   .mdl-faq .m-item header {
-    font: 700 13px/1.54 'Brown', sans-serif;
+    font: 700 15px/1.67 'Brown', sans-serif;
   }
   .mdl-faq .m-item section {
     margin-top: 15px;
-    font: 13px/1.54 'Work Sans', sans-serif;
+    font: 14px/1.64 'Work Sans', sans-serif;
   }
   .mdl-faq .m-banner {
     margin-top: 40px;
     padding: 43px 22px 40px;
+    background-size: 230%;
   }
   .mdl-faq .m-banner .css-button2 {
     height: 52px;
@@ -986,19 +1010,20 @@ img {
 }
 @media (max-width: 767px) {
   .mdl-learn {
-    padding-top: 40px;
+    padding-top: 30px;
   }
   .mdl-learn:before {
-    background-size: 2665px 700px;
+    background-image: url(img/path-7-path-7-path-7-copy-path-7-copy-mask.svg);
+    background-size: 1732px 604px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 2665px;
-    height: 700px;
-    margin-left: 80px;
+    width: 1732px;
+    height: 604px;
+    margin-left: -85px;
   }
   .mdl-learn .m-grid {
-    margin: 13px 0 76px;
+    margin: 25px 0 60px;
     display: block;
   }
   .mdl-learn .m-item {
@@ -1012,21 +1037,24 @@ img {
     margin-bottom: 6px;
   }
   .mdl-learn .m-item header big {
-    font: 16px/1.56 'Brown', sans-serif;
+    font: 700 18px/1.44 'Brown', sans-serif;
   }
   .mdl-learn .m-item section {
-    font: 11px/1.73 'Work Sans', sans-serif;
+    font: 14px/1.64 'Work Sans', sans-serif;
     margin-top: 15px;
   }
   .mdl-learn .m-item footer {
-    font: 11px/1.73 'Work Sans', sans-serif;
+    font: 14px/1.64 'Work Sans', sans-serif;
     color: #ff3c00;
   }
   .mdl-learn .m-item footer i {
-    font-size: 7px;
+    font-size: 10px;
   }
   .mdl-learn .m-buttons {
-    margin: 15px auto 74px;
+    margin: 10px auto 60px;
+  }
+  .mdl-learn .m-buttons a:not(:first-of-type) {
+    margin-top: 11px;
   }
 }
 .mdl-footer {
@@ -1093,9 +1121,10 @@ img {
 }
 @media (max-width: 767px) {
   .mdl-head:before {
+    background-image: url(img/group-52@3x.png);
     height: 434px;
-    width: 1966px;
-    background-size: 1966px 434px;
+    width: 1673px;
+    background-size: 1673px 434px;
     margin-left: -70px;
     top: auto;
     bottom: 0;
@@ -1167,7 +1196,8 @@ img {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    max-height: 100vh;
     overflow: auto;
     background-color: #ffffff;
     padding: 68px 40px 22px;
@@ -1226,7 +1256,6 @@ img {
   .mdl-header .m-img {
     position: relative;
     z-index: 11;
-    background-image: url(img/firecracker-logo@3x.png);
     background-size: auto 60px;
     background-repeat: no-repeat;
   }
@@ -1278,7 +1307,6 @@ img {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
     overflow: auto;
     background-color: #ffffff;
     padding: 68px 18px 22px;
@@ -1337,7 +1365,6 @@ img {
   .mdl-header .m-img {
     position: relative;
     z-index: 11;
-    background-image: url(img/firecracker-logo.png);
     background-size: auto 35px;
   }
   .mdl-header .m-img img {
@@ -1356,13 +1383,13 @@ img {
   align-items: flex-start;
 }
 .mdl-hero .m-title {
-  font: 700 55px/1.02 'Brown', sans-serif;
+  font: 700 60px/1.08 'Brown', sans-serif;
   color: #ffffff;
-  max-width: 1040px;
+  max-width: 784px;
 }
 .mdl-hero a {
   min-width: 360px;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .mdl-hero .css-button2 {
   height: 70px;
@@ -1372,10 +1399,10 @@ img {
     margin: 64px 0 111px;
   }
   .mdl-hero .m-title {
-    font: 700 28px/1.07 'Brown', sans-serif;
+    font: 700 30px/1.13 'Brown', sans-serif;
   }
   .mdl-hero a {
-    margin-top: 43px;
+    margin-top: 30px;
     min-width: 215px;
   }
   .mdl-hero .css-button2 {

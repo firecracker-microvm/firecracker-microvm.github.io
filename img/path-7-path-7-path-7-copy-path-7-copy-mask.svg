@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1732" height="604" viewBox="0 0 1732 604">
+    <defs>
+        <radialGradient id="b" cx="59.073%" cy="0%" r="168.024%" fx="59.073%" fy="0%" gradientTransform="matrix(-.15695 .893 -.31142 -.45006 .683 -.528)">
+            <stop offset="0%" stop-color="#FF9E5E"/>
+            <stop offset="47.098%" stop-color="#F97147"/>
+            <stop offset="100%" stop-color="#FF542A"/>
+        </radialGradient>
+        <path id="a" d="M715.482 62.788l153.41 17.673L1144.432 0 1732 604H0l388.14-413z"/>
+        <linearGradient id="c" x1="74.887%" x2="9.326%" y1="5.698%" y2="103.339%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".247"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="e" cx="67.061%" cy="20.813%" r="41.691%" fx="67.061%" fy="20.813%" gradientTransform="matrix(-.29995 .76076 -1.85301 -.46464 1.257 -.205)">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".247"/>
+            <stop offset="85.991%" stop-color="#FFF" stop-opacity=".006"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="f" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".247"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="g" cx="81.46%" r="58.037%" fx="81.46%" fy="50%" gradientTransform="matrix(-.50392 .77937 -1.21757 -1.21707 1.834 .474)">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".247"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="h" x1="65.302%" x2="20.837%" y1="0%" y2="97.412%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".25"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="i" cx="59.861%" cy="40.215%" r="33.262%" fx="59.861%" fy="40.215%" gradientTransform="matrix(.54322 .67217 -1.63086 .84477 .93 -.34)">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".247"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="d" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="url(#b)" xlink:href="#a"/>
+        <path fill="url(#c)" d="M901.752 110.358L727.487 360.92l-101.932-29.229 132.165-280.5z" mask="url(#d)" style="mix-blend-mode:soft-light" transform="rotate(-16 763.653 206.057)"/>
+        <path stroke="url(#e)" stroke-width=".5" d="M907.47 113.155L698.136 411.331l-76.966-53.743 143.34-305.06 142.96 60.627z" mask="url(#d)" transform="rotate(-16 764.287 231.918)"/>
+        <path fill="url(#f)" d="M646.71 369.705L477.234 565.852 300.335 779.219-2.148 217.881z" mask="url(#d)" style="mix-blend-mode:soft-light" transform="rotate(-60 322.281 498.55)"/>
+        <path stroke="url(#g)" stroke-width=".5" d="M628.042 360.197L324.019 714.865l-.19-.213-84.272-94.199-193.48-373.619 581.965 113.363z" mask="url(#d)" transform="rotate(-60 337.054 480.832)"/>
+        <path fill="url(#h)" d="M1261.298 409l-314.182-44.402L1144.765 0z" mask="url(#d)" style="mix-blend-mode:soft-light"/>
+        <path stroke="url(#i)" stroke-width=".5" d="M1262.781 401.27l-321.78-19.043L1144.283-.658l118.497 401.929z" mask="url(#d)"/>
+    </g>
+</svg>
