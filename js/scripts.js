@@ -24,11 +24,22 @@ $(document).ready(function(){
     $('.mdl-header nav a').click(function(){
         $('.mdl-header label').click();
     });
+
+    //Sticky Header
+    $(window).on('scroll', function() {
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos > 570){
+            $('.sticky-header').addClass('sticky-show');
+            console.log('adding class');
+        } else {
+            $('.sticky-header').removeClass('sticky-show');
+        }
+    });
+
     
 });
 
 $(window).load(function(){
-    
     $('.sta-masonry').each(function(){
         $(this).masonry();
     });
