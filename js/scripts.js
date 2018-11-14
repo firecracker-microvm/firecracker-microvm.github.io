@@ -8,7 +8,7 @@ $(document).ready(function(){
 
             if (target.length) {
                 $('html, body').animate({
-                    scrollTop: (target.offset().top - 20)
+                    scrollTop: (target.offset().top - 120)
                 }, 1000);
 
                 return false;
@@ -28,11 +28,10 @@ $(document).ready(function(){
     //Sticky Header
     $(window).on('scroll', function() {
         var scrollPos = $(document).scrollTop();
-        if (scrollPos > 570){
-            $('.sticky-header').addClass('sticky-show');
-            console.log('adding class');
+        if (scrollPos > 500){
+            $('.sticky-header').slideDown(400, 'linear')
         } else {
-            $('.sticky-header').removeClass('sticky-show');
+            $('.sticky-header').slideUp(400, 'linear');
         }
     });
 

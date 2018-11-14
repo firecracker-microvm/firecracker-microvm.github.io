@@ -983,6 +983,54 @@
     }
 }
 
+.sticky-header{
+    padding: 16px 40px;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    display: none;
+    box-sizing: border-box;
+    background: @color1;
+
+
+    .m-content{
+        .maxW(@maxWL);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .m-logo{
+
+        img{
+            display: block;
+            height: 60px;
+        }
+    }
+
+    nav{
+        font: 700 16px @font1;
+        letter-spacing: 1.5px;
+        color: @color3;
+        text-transform: uppercase;
+        margin-top: 10px;
+
+        a{
+            margin-left: 30px;
+            transition: .3s ease opacity;
+
+            &.m-logo{
+                display: none;
+            }
+
+            &.sta-hoverOFF:hover{
+                opacity: .70;
+            }
+        }
+    }
+}
+
 .mdl-header{
     padding: 16px 40px;
     
