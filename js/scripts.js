@@ -8,7 +8,7 @@ $(document).ready(function(){
 
             if (target.length) {
                 $('html, body').animate({
-                    scrollTop: (target.offset().top - 120)
+                    scrollTop: (target.offset().top - 125)
                 }, 1000);
 
                 return false;
@@ -34,7 +34,6 @@ $(document).ready(function(){
             $('.sticky-header').slideUp(400, 'linear');
         }
     });
-
     
 });
 
@@ -43,3 +42,4 @@ $(window).load(function(){
         $(this).masonry();
     });
 });
+

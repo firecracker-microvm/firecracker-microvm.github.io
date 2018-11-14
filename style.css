@@ -390,7 +390,7 @@ img {
   font: 700 50px/1.04 'Brown', sans-serif;
   color: #4f483f;
   text-align: center;
-  margin-bottom: 72px;
+  margin-bottom: 22px;
 }
 @media (max-width: 767px) {
   .mdl-article2 header {
@@ -411,6 +411,7 @@ img {
   display: none;
 }
 .mdl-article2 section {
+  margin-bottom: 30px;
   font: 19px/1.79 'Work Sans', sans-serif;
   color: #4f483f;
   opacity: .75;
@@ -657,7 +658,7 @@ img {
   }
 }
 .mdl-benefits .m-grid {
-  margin: 60px -16px 0;
+  margin: 7px -16px 53px -16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -763,6 +764,7 @@ img {
   margin: 0 auto;
   max-width: 1157px;
   position: relative;
+  margin-top: -15px;
 }
 .mdl-faq .m-content:before {
   content: '';
@@ -977,7 +979,7 @@ img {
   }
 }
 .mdl-learn .m-grid {
-  margin: 66px -9px 98px;
+  margin: 26px -9px 98px;
   display: flex;
 }
 .mdl-learn .m-item {
@@ -1176,42 +1178,50 @@ img {
     bottom: 0;
   }
 }
-.sticky-header {
-  padding: 16px 40px;
-  z-index: 3;
-  position: fixed;
-  width: 100%;
-  display: none;
-  box-sizing: border-box;
-  background: #fff;
+@media (max-width: 900px) {
+  .sticky {
+    display: none;
+  }
 }
-.sticky-header .m-content {
-  max-width: 1157px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.sticky-header .m-logo img {
-  display: block;
-  height: 60px;
-}
-.sticky-header nav {
-  font: 700 16px 'Brown', sans-serif;
-  letter-spacing: 1.5px;
-  color: #4f483f;
-  text-transform: uppercase;
-  margin-top: 10px;
-}
-.sticky-header nav a {
-  margin-left: 30px;
-  transition: .3s ease opacity;
-}
-.sticky-header nav a.m-logo {
-  display: none;
-}
-.sticky-header nav a.sta-hoverOFF:hover {
-  opacity: .70;
+@media (min-width: 900px) {
+  .sticky-header {
+    padding: 16px 40px;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    display: none;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0px 4px 8px -4px #ccc;
+  }
+  .sticky-header .m-content {
+    max-width: 1157px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sticky-header .m-logo img {
+    display: block;
+    height: 60px;
+  }
+  .sticky-header nav {
+    font: 700 16px 'Brown', sans-serif;
+    letter-spacing: 1.5px;
+    color: #4f483f;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .sticky-header nav a {
+    margin-left: 30px;
+    transition: .3s ease opacity;
+  }
+  .sticky-header nav a.m-logo {
+    display: none;
+  }
+  .sticky-header nav a.sta-hoverOFF:hover {
+    opacity: .70;
+  }
 }
 .mdl-header {
   padding: 16px 40px;
