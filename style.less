@@ -1,7 +1,7 @@
 @import "less/style";
 
 .mdl-article{
-    padding-top: 92px;
+    padding-top: 72px;
     
     .m-content{
         .maxW(@maxWL);
@@ -19,7 +19,11 @@
         -moz-column-count: 2;
         column-count: 2;
         column-gap: 71px;
-        break-inside: avoid;
+        
+        > *{
+            break-inside: avoid;
+            margin-bottom: 0;
+        }
         
         a{
             color: @color6;
@@ -37,6 +41,14 @@
             -webkit-column-count: 1;
             -moz-column-count: 1;
             column-count: 1;
+            
+            > p{
+                margin-bottom: 20px;
+                
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
         }
     }
     
@@ -101,7 +113,10 @@
         -moz-column-count: 2;
         column-count: 2;
         column-gap: 71px;
-        break-inside: avoid;
+        
+        > *{
+            break-inside: avoid;
+        }
     }
     
     @media @mMobileL{
@@ -110,6 +125,14 @@
             -webkit-column-count: 1;
             -moz-column-count: 1;
             column-count: 1;
+            
+            > p{
+                margin-bottom: 20px;
+                
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
         }
     }
     
@@ -566,6 +589,15 @@
             color: @color3;
             opacity: .75;
             margin-top: 17px;
+            
+            a{
+                color: @color6;
+                text-decoration: underline;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
         }
     }
     
@@ -584,6 +616,10 @@
             
             &.sta-hoverOFF:hover{
                 color: @color3;
+            }
+            
+            &:active{
+                color: @color3!important;
             }
         }
     }
@@ -919,13 +955,13 @@
         background-image: url(img/header@2x.png);
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: 2510px 554px;
+        background-size: 2238px 494px;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 2510px;
-        height: 554px;
+        width: 2238px;
+        height: 494px;
         margin-left: -220px;
     }
     
@@ -1006,7 +1042,7 @@
                     }
                     
                     nav{
-                        transform: translateX(0);
+                        transform: translateY(0);
                         
                         a{
                             
@@ -1066,7 +1102,7 @@
             font: 700 16px/3.13 @font1;
             color: @color3;
             z-index: 10;
-            transform: translateX(100%);
+            transform: translateY(-100%);
             transition: .3s ease transform;
             margin-top: 0;
             
@@ -1160,10 +1196,6 @@
                         }
                     }
                     
-                    nav{
-                        transform: translateX(0);
-                    }
-                    
                     label{
                         
                         > span{
@@ -1217,7 +1249,6 @@
             font: 700 16px/3.13 @font1;
             color: @color3;
             z-index: 10;
-            transform: translateX(100%);
             transition: .3s ease transform;
             margin-top: 0;
             
@@ -1292,7 +1323,7 @@
 }
 
 .mdl-hero{
-    margin: 95px 0 153px;
+    margin: 95px 0 89px;
     
     .m-content{
         .maxW(@maxWL);
@@ -1309,7 +1340,7 @@
     
     a{
         min-width: 360px;
-        margin-top: 25px;
+        margin-top: 20px;
     }
     
     .css-button2{
