@@ -157,9 +157,9 @@ img {
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
 }
 .css-button:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), radial-gradient(circle at 100% 0, #7e7871, #68635e 17%, #514d49);
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), radial-gradient(circle at 100% 0, #7e7871, #68635e 17%, #514d49) !important;
 }
 .css-button span {
   transform: translateY(3px);
@@ -201,11 +201,10 @@ img {
   color: #ff542a;
 }
 .css-button2:active {
-  background-color: #ffffff;
-  transform: translateY(2px);
-  background-image: radial-gradient(circle at 95% 10%, #ff9e5e, #f97147 47%, #ff542a, #ff542a);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  color: #ff542a;
+  background-color: #ffffff !important;
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1) !important;
+  color: #ff542a !important;
 }
 .css-button2 span {
   transform: translateY(3px);
@@ -244,11 +243,11 @@ img {
   opacity: .75;
 }
 .css-button3:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1) !important;
 }
 .css-button3:active > * {
-  opacity: .75;
+  opacity: .75!important;
 }
 .css-button3 > * {
   transition: .3s ease opacity;
