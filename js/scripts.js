@@ -26,14 +26,21 @@ $(document).ready(function(){
     });
 
     //Sticky Header
+    var visible;
     $(window).on('scroll', function() {
         var scrollPos = $(document).scrollTop();
         if (scrollPos > 500){
-            $('.sticky-header').slideDown(400, 'linear')
+            $('.sticky-header').slideDown(400, 'linear');
         } else {
             $('.sticky-header').slideUp(400, 'linear');
         }
     });
+
+    //Scroll to Top
+    $('.s-logo').click(function(){
+        $('html, body').animate({ scrollTop: 0 }, 1000);
+        return false;
+    })
     
 });
 

@@ -390,7 +390,7 @@ img {
   font: 700 50px/1.04 'Brown', sans-serif;
   color: #4f483f;
   text-align: center;
-  margin-bottom: 22px;
+  padding: 40px 0px 55px 0px;
 }
 @media (max-width: 767px) {
   .mdl-article2 header {
@@ -651,6 +651,7 @@ img {
   font: 700 50px/1.04 'Brown', sans-serif;
   color: #4f483f;
   text-align: center;
+  padding: 40px 0px;
 }
 @media (max-width: 767px) {
   .mdl-benefits .m-title {
@@ -962,6 +963,7 @@ img {
   font: 700 50px/1.04 'Brown', sans-serif;
   color: #4f483f;
   text-align: center;
+  padding: 30px 0px;
 }
 @media (max-width: 767px) {
   .mdl-learn .m-title {
@@ -1201,7 +1203,7 @@ img {
     justify-content: space-between;
     align-items: center;
   }
-  .sticky-header .m-logo img {
+  .sticky-header .s-logo img {
     display: block;
     height: 60px;
   }
