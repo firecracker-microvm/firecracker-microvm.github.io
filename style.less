@@ -88,7 +88,7 @@
     header{
         .css-title2(@color3);
         text-align: center;
-        margin-bottom: 72px;
+        margin-bottom: 22px;
     }
     
     .m-img{
@@ -108,6 +108,7 @@
     }
     
     section{
+        margin-bottom: 30px;
         .css-text(@color3);
         -webkit-column-count: 2;
         -moz-column-count: 2;
@@ -388,7 +389,7 @@
     }
     
     .m-grid{
-        margin: 60px -16px 0;
+        margin: 7px -16px 53px -16px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -516,6 +517,7 @@
     .m-content{
         .maxW(@maxWL);
         position: relative;
+        margin-top: -5px;
         
         &:before{
             content: '';
@@ -569,7 +571,7 @@
     }
     
     .m-grid{
-        margin: 127px -16px 0;
+        margin: 117px -16px 0;
     }
     
     .m-item{
@@ -745,7 +747,7 @@
     }
     
     .m-grid{
-        margin: 66px -9px 98px;
+        margin: 26px -9px 98px;
         display: flex;
     }
     
@@ -979,6 +981,61 @@
             margin-left: -70px;
             top: auto;
             bottom: 0;
+        }
+    }
+}
+@media @mMobileL {
+    .sticky {
+        display: none;
+    }
+}
+@media @desktop {
+    .sticky-header{
+        padding: 16px 40px;
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        display: none;
+        box-sizing: border-box;
+        background: @color1;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+
+
+        .m-content{
+            .maxW(@maxWL);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .m-logo{
+
+            img{
+                display: block;
+                height: 60px;
+            }
+        }
+
+        nav{
+            font: 700 16px @font1;
+            letter-spacing: 1.5px;
+            color: @color3;
+            text-transform: uppercase;
+            margin-top: 10px;
+
+            a{
+                margin-left: 30px;
+                transition: .3s ease opacity;
+
+                &.m-logo{
+                    display: none;
+                }
+
+                &.sta-hoverOFF:hover{
+                    opacity: .70;
+                }
+            }
         }
     }
 }
