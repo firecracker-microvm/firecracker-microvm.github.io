@@ -140,8 +140,8 @@
                         <section>Firecracker was built at Amazon Web Services to enable AWS services such as AWS Fargate and AWS Lambda to improve resource utilization and customer experience. Firecracker is based on Chromium OSs' Virtual Machine Monitor (crosvm), an open-sourced VMM written in Rust. Today, crosvm and Firecracker have diverged to serve very different customer needs. We plan to contribute back the bug fixes and tests added to shared crates, and any Firecracker functionality that's appealing for crosvm.</section>
                     </article>            
                     <article class="m-item">
-                        <header>Who uses Firecracker today and how will they use firecracker?</header>
-                        <section>Firecracker is for service owners running containers and functions-based services. Service owners will be able to launch containers via familiar interfaces such as containerd and OCI runtime interface which can automatically create micro-VMs to sandbox containerized applications.</section>
+                        <header>Who uses Firecracker today and how will they use Firecracker?</header>
+                        <section>Firecracker is for service owners running containers and functions-based services. Service owners will be able to launch containers via familiar interfaces such as containerd and OCI runtime interface which can automatically create micro-VMs to sandbox containerized applications. <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> and <a href="https://aws.amazon.com/fargate/">AWS Fargate</a> are built on Firecracker.</section>
                     </article>
                     <article class="m-item">
                         <header>Is Firecracker compatible with the container ecosystem such as Kubernetes, Docker, Kata containers?</header>
@@ -157,10 +157,10 @@
                     </article>            
                     <article class="m-item">
                         <header>What is the difference between Firecracker and Kata Containers and QEMU?</header>
-                        <section>Kata Containers is an OCI-compliant container runtime that executes containers within QEMU based virtual machines. Firecracker is a cloud-native alternative to QEMU that is purpose-built for running containers safely and efficiently, and nothing more. Firecracker has provides a minimal required device model to the guest operating system while excluding non-essential functionality (there are only 4 emulated devices: virtio-net, virtio-block, serial console, and a keyboard controller used only to stop the microVM). This, along with a streamlined kernel loading process enables a < 125 ms startup time and a reduced memory footprint. The Firecracker process also provides a RESTful control API, handles resource rate limiting for microVMs, and provides a microVM metadata service to enable the sharing of configuration data between the host and guest.</section>
+                        <section>Kata Containers is an OCI-compliant container runtime that executes containers within QEMU based virtual machines. Firecracker is a cloud-native alternative to QEMU that is purpose-built for running containers safely and efficiently, and nothing more. Firecracker provides a minimal required device model to the guest operating system while excluding non-essential functionality (there are only 4 emulated devices: virtio-net, virtio-block, serial console, and a 1-button keyboard controller used only to stop the microVM). This, along with a streamlined kernel loading process enables a < 125 ms startup time and a reduced memory footprint. The Firecracker process also provides a RESTful control API, handles resource rate limiting for microVMs, and provides a microVM metadata service to enable the sharing of configuration data between the host and guest.</section>
                     </article>
                     <article class="m-item">
-                        <header>What operating systems are supported by firecracker?</header>
+                        <header>What operating systems are supported by Firecracker?</header>
                         <section>Firecracker supports Linux host and guest operating systems with kernel versions 4.14 and above. The long-term support plan is still under discussion. A leading option is to support Firecracker for the last two Linux stable branch releases.</section>
                     </article>
                     <article class="m-item">
@@ -186,7 +186,7 @@
                 </div>
                 <div class="m-banner">
                     <div class="m-tit">Still didn’t find your answer?</div>
-                    <a href="#" class="css-button2 sta-hoverOFF">Contact us</a>
+                    <a href="mailto:firecracker-maintainers@amazon.com" class="css-button2 sta-hoverOFF">Contact us</a>
                 </div>
             </div>
         </section>
