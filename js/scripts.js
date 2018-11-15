@@ -6,9 +6,15 @@ $(document).ready(function(){
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 
-            if (target.length) {
+            if (target.length && window.innerWidth > 900) {
                 $('html, body').animate({
                     scrollTop: (target.offset().top - 125)
+                }, 1000);
+
+                return false;
+            } else {
+                $('html, body').animate({
+                    scrollTop: (target.offset().top - 18)
                 }, 1000);
 
                 return false;
@@ -26,7 +32,6 @@ $(document).ready(function(){
     });
 
     //Sticky Header
-    var visible;
     $(window).on('scroll', function() {
         var scrollPos = $(document).scrollTop();
         if (scrollPos > 500){
