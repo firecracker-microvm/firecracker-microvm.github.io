@@ -1169,6 +1169,22 @@ img {
 .mdl-head > * {
   position: relative;
 }
+@media (max-width: 900px) {
+  .mdl-head:before {
+    content: '';
+    background-image: url(img/header@2x.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 2238px 524px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2238px;
+    height: 524px;
+    margin-left: -220px;
+  }
+}
 @media (max-width: 767px) {
   .mdl-head:before {
     background-image: url(img/group-52@3x.png);

@@ -973,6 +973,23 @@
         position: relative;
     }
     
+    @media @mMobileL{
+        &:before {
+            content: '';
+            background-image: url(img/header@2x.png);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: 2238px 524px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2238px;
+            height: 524px;
+            margin-left: -220px;
+        }
+    }
+
     @media @smMobileL{
         
         &:before{
@@ -1405,6 +1422,16 @@
     .css-button2{
         height: 70px;
     }
+
+    // @media @mMobileL{
+    //     a{
+    //         min-width: 315px;
+    //         margin-top: 15px;
+    //     }
+    //     .css-button2{
+    //         height: 55px;
+    //     }
+    // }
     
     @media @smMobileL{
         margin: 64px 0 111px;
