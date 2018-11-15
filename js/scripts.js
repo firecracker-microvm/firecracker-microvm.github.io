@@ -35,9 +35,9 @@ $(document).ready(function(){
     $(window).on('scroll', function() {
         var scrollPos = $(document).scrollTop();
         if (scrollPos > 500){
-            $('.sticky-header').slideDown(400, 'linear');
+            $('.sticky-header').slideDown(250, 'linear');
         } else {
-            $('.sticky-header').slideUp(400, 'linear');
+            $('.sticky-header').slideUp(250, 'linear');
         }
     });
 
