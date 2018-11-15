@@ -8,12 +8,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="js/masonry.pkgd.min.js"></script>
         <script src="js/scripts.js" defer></script>
+	<title>Firecracker</title>
     </head>
     <body>
         <div id="sticky" name="sticky" class="sticky">
             <header class="sticky-header">
                 <div class="m-content">
-                    <a href id="home" class="s-logo">
+                    <a href id="sticky-home" class="s-logo">
                         <img class="sticky-logo" src="img/firecracker-13@3x.png" alt="">
                     </a>
                     <nav>
@@ -49,16 +50,16 @@
             <section class="mdl-hero">
                 <div class="m-content">
                     <div class="m-title">Secure and fast microVMs for serverless computing</div>
-                    <a href="#" class="css-button2 sta-hoverOFF">Contribute Code</a>
+                    <a href="https://github.com/firecracker-microvm" class="css-button2 sta-hoverOFF">See the GitHub</a>
                 </div>
             </section>
         </div>
         <section class="mdl-article">
             <article class="m-content">
-                <header>Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multitenant containers and functions-based services.</header>
+                <header>Firecracker is an open-source virtualization technology that is purpose-built for creating and managing secure, multitenant containers and functions-based services.</header>
                 <section>
                     <p>AWS Lambda and AWS Fargate are built on Firecracker. Until now, you needed to make a tradeoff between fast startup times and security. Containers offer fast startup times, while VMs offer hardware virtualization-based security boundaries that are more secure. In addition, the memory overhead of existing virtualization technologies makes it difficult to pack a high density of VMs onto a single machine for efficient hardware utilization. Firecracker enables you to deploy workloads in lightweight virtual machines, called microVMs, which combine the security and workload isolation properties of traditional VMs with the speed and resource efficiency of containers.</p>
-                    <p>Firecracker implements a virtual machine monitor (VMM) based on the Linux Kernel-based Virtual Machine (KVM) to create and manage microVMs. Firecracker has a minimalist design. It excludes unnecessary devices and guest functionality to reduce the memory footprint and attack surface area of each microVM.  This improves security, decreases the startup time, and increases hardware utilization. Firecracker currently supports Intel CPUs, with planned AMD and ARM support. Firecracker will also be integrated with popular container runtimes. Our latest roadmap can be found <a href="#">here</a></p>
+                    <p>Firecracker implements a virtual machine monitor (VMM) based on the Linux Kernel-based Virtual Machine (KVM) to create and manage microVMs. Firecracker has a minimalist design. It excludes unnecessary devices and guest functionality to reduce the memory footprint and attack surface area of each microVM.  This improves security, decreases the startup time, and increases hardware utilization. Firecracker currently supports Intel CPUs, with planned AMD and ARM support. Firecracker will also be integrated with popular container runtimes. Our latest roadmap can be found <a href="https://github.com/firecracker-microvm/firecracker/labels/Roadmap">here</a></p>
                 </section>
             </article>
         </section>
@@ -66,20 +67,20 @@
             <div class="m-content">
                 <img class="m-bg" src="img/logo-icon@3x.png" alt="">
                 <div class="m-text">
-                    <p>Firecracker is open sourced under Apache version 2.0.</p>
+                    <p>Firecracker is open-sourced under Apache version 2.0.</p>
                     <div class="m-imgs">
                         <img src="img/fargate-logo.svg" alt="">
                         <img src="img/lambda-logo.svg" alt="">
                     </div>
                 </div>
                 <div class="m-buttons">
-                    <a href="#" class="css-button sta-hoverOFF">
+                    <a href="https://github.com/firecracker-microvm" class="css-button sta-hoverOFF">
                         <i class="icon-github" aria-hidden="true"></i>
                         <span>join our github community</span>
                     </a>
-                    <a href="#" class="css-button sta-hoverOFF">
+                    <a href="https://tinyurl.com/firecracker-microvm" class="css-button sta-hoverOFF">
                         <i class="icon-slack" aria-hidden="true"></i>
-                        <span>chat with us on slack</span>
+                        <span>Chat about Firecracker on Slack</span>
                     </a>
                 </div>
             </div>
@@ -93,14 +94,14 @@
                             <img src="img/security-icon@3x.png" alt="">
                             <header>Security from the ground up</header>
                         </div>
-                        <section>Firecracker microVMs use KVM-based hardware virtualizations that provide the same security isolation as traditional VMs. This ensures that workloads from different end customers can run safely on the same machine. Firecracker also implements a minimal device model which excludes all non-essential functionality and reduces the attack surface area of the microVM. </section>
+                        <section>Firecracker microVMs use KVM-based hardware virtualizations that provide the same security isolation as traditional VMs. This ensures that workloads from different end customers can run safely on the same machine. Firecracker also implements a minimal device model that excludes all non-essential functionality and reduces the attack surface area of the microVM. </section>
                     </article>
                     <article class="m-item">
                         <div class="m-header">
                             <img src="img/speed-icon@3x.png" alt="">
                             <header>Speed by design</header>
                         </div>
-                        <section>In addition to a minimal device model, Firecracker also accelerates kernel loading and provides a minimal guest kernel configuration. This enables fast container-like startup times. Firecracker initiates user-space code in less than 125ms and supports microVM creation rates of 150 microVMs per second per host.</section>
+                        <section>In addition to a minimal device model, Firecracker also accelerates kernel loading and provides a minimal guest kernel configuration. This enables fast startup times. Firecracker initiates user space or application code in less than 125ms and supports microVM creation rates of 150 microVMs per second per host.</section>
                     </article>
                     <article class="m-item">
                         <div class="m-header">
@@ -121,8 +122,8 @@
                     <img src="img/graph-mobile-27@3x.png" class="m-device" alt="">
                 </div>
                 <section>
-                    <p>Firecracker runs in the user space and leverages the Linux Kernel-based Virtual Machine (KVM) to create microVMs. The fast startup time and low memory overhead of each microVM enables you to pack thousands of microVMs onto the same machine. This means that every container or function can be encapsulated with a virtual machine barrier, enabling workloads from different customers to run on the same machine, without any tradeoffs to security or efficiency. Firecracker is an alternative to QEMU, an established VMM with a general purpose and broad feature set that allows it to host a variety of guest operating systems.</p>
-                    <p>You can control the Firecracker process via a REST-ful API that enables common actions such as configuring the number of vCPUs or starting the machine. It provides built-in rate limiters, which enable the fair sharing of network and storage resources by thousands of microVMs on the same machine. You can create and configure rate limiters via the Firecracker API and define flexible rate limiters that support bursts or specific bandwidth/operations limitations. Firecracker also provides a metadata service that securely shares configuration information between the host and guest operating system. You can set up and configure the metadata service using the Firecracker API.   </p>
+                    <p>Firecracker runs in the user space and leverages the Linux Kernel-based Virtual Machine (KVM) to create microVMs. The fast startup time and low memory overhead of each microVM enables you to pack thousands of microVMs onto the same machine. This means that every function or container group can be encapsulated with a virtual machine barrier, enabling workloads from different customers to run on the same machine, without any tradeoffs to security or efficiency. Firecracker is an alternative to QEMU, an established VMM with a general purpose and broad feature set that allows it to host a variety of guest operating systems.</p>
+                    <p>You can control the Firecracker process via a RESTful API that enables common actions such as configuring the number of vCPUs or starting the machine. It provides built-in rate limiters, which enable the fair sharing of network and storage resources by thousands of microVMs on the same machine. You can create and configure rate limiters via the Firecracker API and define flexible rate limiters that support bursts or specific bandwidth/operations limitations. Firecracker also provides a metadata service that securely shares configuration information between the host and guest operating system. You can set up and configure the metadata service using the Firecracker API.   </p>
                 </section>
             </article>
         </section>
@@ -131,65 +132,61 @@
                 <div class="m-title"><span>FAQ</span></div>
                 <div class="m-grid sta-masonry">
                     <article class="m-item">
-                        <header>What is the advantage of Firecracker over a virtual machine?</header>
-                        <section>Firecracker micro-VMs combine the security of VMs while matching the speed and efficiency of containers. Firecracker micro-VMs can initiate user-space code execution in 150ms and have a footprint of less than 5 MiB of memory. Firecracker also provides a RESTful API that can be used with any control plane.</section>
-                    </article>
-                    <article class="m-item">
-                        <header>Is Firecracker compatible with the container ecosystem such as Kubernetes, Docker, Kata containers?</header>
-                        <section>The Firecracker community will explore integration and collaboration with containerd, Docker, and Kata Containers, with the goal of enabling Firecracker to be seamlessly integrated with the container ecosystem.</section>
-                    </article>
-                    <article class="m-item">
-                        <header>What is the difference between Firecracker and Hyper, Intel’s clear Containers, and Kata Containers? </header>
-                        <section>Hyper focuses on translating container images into virtual machine images, and relies on traditional hypervisor technologies like QEMU. Kata Containers is based on Hyper and Intel Clear Containers, a SeaBios + QEMU based microVM solution. Firecracker is a new secure and trusted hypervisor solution designed by AWS that replaces QEMU. It provides a minimal required device model to the guest operating system while excluding non-essential functionality to enable sub-second startup time and a reduced memory footprint. The Firecracker process also provides a RESTful control API, handles resource rate limiting for microVMs, provides hardware-agnostic ENA virtualization, and instance metadata to ensure customers can use microVMs similar to how they use EC2 instances.</section>
-                    </article>
-                    <article class="m-item">
-                        <header>Who uses Firecracker?</header>
-                        <section>Firecracker is designed for service owners building and managing secure, multi-tenant container and functions-based services.</section>
+                        <header>Why did we develop Firecracker?</header>
+                        <section>Customers have told us that existing container security boundaries do not offer sufficient isolation between their applications when all containers have to use a shared operating system (OS) kernel. Containers offer fast startup times, while VMs offer hardware virtualization-based security boundaries that are more secure. Firecracker is a new virtualization technology that enables service owners to operate multi-tenant container-based services on bare metal machines by combining the speed, resource efficiency, and performance enabled by containers with the security and workload isolation properties of traditional VMs. </section>
                     </article>
                     <article class="m-item">
                         <header>Who developed Firecracker?</header>
-                        <section>Firecracker was developed at Amazon Web Services should we talk about compute-capsule team? to enable services such as AWS Fargate and AWS Lambda to significantly improve resource utilization and end-customer experience.</section>
+                        <section>Firecracker was built at Amazon Web Services to enable AWS services such as AWS Fargate and AWS Lambda to improve resource utilization and customer experience. Firecracker is based on Chromium OSs' Virtual Machine Monitor (crosvm), an open-sourced VMM written in Rust. Today, crosvm and Firecracker have diverged to serve very different customer needs. We plan to contribute back the bug fixes and tests added to shared crates, and any Firecracker functionality that's appealing for crosvm.</section>
+                    </article>            
+                    <article class="m-item">
+                        <header>Who uses Firecracker today and how will they use Firecracker?</header>
+                        <section>Firecracker is for service owners running containers and functions-based services. Service owners will be able to launch containers via familiar interfaces such as containerd and OCI runtime interface which can automatically create micro-VMs to sandbox containerized applications. <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> and <a href="https://aws.amazon.com/fargate/">AWS Fargate</a> are built on Firecracker.</section>
                     </article>
                     <article class="m-item">
-                        <header>How was Firecracker developed?</header>
-                        <section>Firecracker is based on Google’s Chrome OS Virtual Machine Monitor (crosvm), a functional and robust open-sourced VMM written in Rust. Today, crosvm and Firecracker have diverged to serve very different customer needs. We plan to contribute back the bug fixes and tests added to shared crates, and any Firecracker functionality that’s appealing for crosvm.</section>
-                    </article>
-                    <article class="m-item">
-                        <header>What is the open source license for Firecracker?</header>
-                        <section>Firecracker is licensed under the Apache License, version 2.0, allowing you to freely use, copy, distribute, and license your changes under the terms of your choice. <a href="#">Read more about Apache 2.0.</a></section>
-                    </article>
-                    <article class="m-item">
-                        <header>Where is the code and can I contribute?</header>
-                        <section>Yes, Firecracker is an AWS open-source project that encourages contributions from customers and the developer community. You can learn more and contribute at the _official Firecracker GitHub repo.</section>
-                    </article>
-                    <article class="m-item">
-                        <header>What can I do with Firecracker?</header>
-                        <section>First you need to build a control plane...</section>
+                        <header>Is Firecracker compatible with the container ecosystem such as Kubernetes, Docker, Kata containers?</header>
+                        <section>The Firecracker community will explore integration and collaboration with Kubernetes, containerd, Docker, and Kata Containers, with the goal of enabling Firecracker to be seamlessly integrated with the container ecosystem.</section>
                     </article>
                     <article class="m-item">
                         <header>What language is Firecracker written in?</header>
                         <section>Firecracker is written in Rust.</section>
                     </article>
                     <article class="m-item">
-                        <header>How is firecracker governed?</header>
-                        <section>The Firecracker team will own project maintainer responsibilities and permissions to approve pull requests, merge commits in the master branch, and create new Firecracker releases. See the Github project governance.</section>
+                        <header>What processors does Firecracker support?</header>
+                        <section>The Firecracker VMM is built to be processor agnostic. Today, it can run on Intel processors. AMD and ARM processors will be supported in the near future.</section>
+                    </article>            
+                    <article class="m-item">
+                        <header>What is the difference between Firecracker and Kata Containers and QEMU?</header>
+                        <section>Kata Containers is an OCI-compliant container runtime that executes containers within QEMU based virtual machines. Firecracker is a cloud-native alternative to QEMU that is purpose-built for running containers safely and efficiently, and nothing more. Firecracker provides a minimal required device model to the guest operating system while excluding non-essential functionality (there are only 4 emulated devices: virtio-net, virtio-block, serial console, and a 1-button keyboard controller used only to stop the microVM). This, along with a streamlined kernel loading process enables a < 125 ms startup time and a reduced memory footprint. The Firecracker process also provides a RESTful control API, handles resource rate limiting for microVMs, and provides a microVM metadata service to enable the sharing of configuration data between the host and guest.</section>
                     </article>
                     <article class="m-item">
-                        <header>Why is Firecracker based on KVM instead of QEMU?</header>
-                        <section>Firecracker needed to have a low memory footprint, fine-tuned memory over-commitment, quick start-up time, non-polling and hardware-agnostic ENA virtualization, REST API, and rate limiting, and IMDS. It also needed to meet strict security requirements.</section>
+                        <header>What operating systems are supported by Firecracker?</header>
+                        <section>Firecracker supports Linux host and guest operating systems with kernel versions 4.14 and above. The long-term support plan is still under discussion. A leading option is to support Firecracker for the last two Linux stable branch releases.</section>
+                    </article>
+                    <article class="m-item">
+                        <header>What is the open source license for Firecracker?</header>
+                        <section>Firecracker is <a href="https://github.com/firecracker-microvm/firecracker/blob/master/LICENSE">licensed</a> under the Apache License, version 2.0, allowing you to freely use, copy, and distribute your changes under the terms of your choice. <a href="https://www.apache.org/licenses/LICENSE-2.0">Read more about Apache 2.0</a>. Crosvm code sections are licensed under a <a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause license</a> that also allows you to use, copy, and distribute your changes under the terms of your choice.</section>
+                    </article>
+                    <article class="m-item">
+                        <header>Where is the code and can I contribute?</header>
+                        <section>Firecracker is an AWS open-source project that encourages contributions from customers and the developer community. Any contribution is welcome as long as it aligns with the our <a href="https://github.com/firecracker-microvm/firecracker/CHARTER.md">charter</a>. You can learn more about how to contribute <a href="https://github.com/firecracker-microvm/firecracker/CONTRIBUTE.md">here</a>. You can chat with others in the community on the <a href="https://firecracker-microvm.slack.com">Firecracker Slack workspace</a>.</section>
+                    </article>            
+                    <article class="m-item">
+                        <header>How is Firecracker project governed?</header>
+                        <section>The Firecracker <a
+                            href="https://github.com/firecracker-microvm/firecracker/MAINTAINERS.md">team
+                            at Amazon Web Services</a> owns project maintainer responsibilities,
+                            permissions to merge pull requests, and the ability to create new Firecracker
+                            releases.</section>
                     </article>
                     <article class="m-item">
                         <header>Are there plans to make Firecracker an OpenStack or CNCF project?</header>
                         <section>Not at the moment.</section>
                     </article>
-                    <article class="m-item">
-                        <header>What processors does Firecracker suppport?</header>
-                        <section>Firecracker supports Intel processors with planned support for AMD and ARM coming soon.</section>
-                    </article>
                 </div>
                 <div class="m-banner">
                     <div class="m-tit">Still didn’t find your answer?</div>
-                    <a href="#" class="css-button2 sta-hoverOFF">Contact us</a>
+                    <a href="mailto:firecracker-maintainers@amazon.com" class="css-button2 sta-hoverOFF">Contact us</a>
                 </div>
             </div>
         </section>
@@ -197,7 +194,7 @@
             <div class="m-content">
                 <div id="learn_more" name="learn_more" class="m-title">Learn More</div>
                 <div class="m-grid">
-                    <a class="m-item sta-hoverOFF">
+                    <a href="#" class="m-item sta-hoverOFF">
                         <article>
                             <header>
                                 <small>JEFF BARR BLOG</small>
@@ -210,7 +207,7 @@
                             </footer>
                         </article>
                     </a>
-                    <a class="m-item sta-hoverOFF">
+                    <a href="#" class="m-item sta-hoverOFF">
                         <article>
                             <header>
                                 <small>OPEN SOURCE BLOG</small>
@@ -226,13 +223,13 @@
                 </div>
                 <div class="m-title2">Get Involved</div>
                 <div class="m-buttons">
-                    <a href="#" class="css-button3 sta-hoverOFF">
+                    <a href="https://github.com/firecracker-microvm" class="css-button3 sta-hoverOFF">
                         <i class="icon-github" aria-hidden="true"></i>
                         <span>join our github community</span>
                     </a>
-                    <a href="#" class="css-button3 sta-hoverOFF">
+                    <a href="https://tinyurl.com/firecracker-microvm" class="css-button3 sta-hoverOFF">
                         <i class="icon-slack" aria-hidden="true"></i>
-                        <span>chat with us on slack</span>
+                        <span>Chat about Firecracker on Slack</span>
                     </a>
                 </div>
             </div>
