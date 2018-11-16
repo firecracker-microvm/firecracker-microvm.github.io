@@ -463,7 +463,9 @@ img {
   }
   .mdl-article2 .m-img img.m-device {
     display: block;
-    max-width: 247px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
   .mdl-article2 section {
     -webkit-column-count: 1;
