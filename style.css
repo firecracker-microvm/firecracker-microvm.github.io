@@ -324,19 +324,11 @@ img {
   font: 19px/1.79 'Work Sans', sans-serif;
   color: #4f483f;
   opacity: .75;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  column-gap: 71px;
 }
 @media (max-width: 767px) {
   .mdl-article section {
     font: 15px/1.67 'Brown', sans-serif;
   }
-}
-.mdl-article section > * {
-  break-inside: avoid;
-  margin-bottom: 0;
 }
 .mdl-article section a {
   color: #ff542a;
@@ -415,18 +407,11 @@ img {
   font: 19px/1.79 'Work Sans', sans-serif;
   color: #4f483f;
   opacity: .75;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  column-gap: 71px;
 }
 @media (max-width: 767px) {
   .mdl-article2 section {
     font: 15px/1.67 'Brown', sans-serif;
   }
-}
-.mdl-article2 section > * {
-  break-inside: avoid;
 }
 @media (max-width: 900px) {
   .mdl-article2 section {
