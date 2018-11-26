@@ -65,8 +65,8 @@
             <article class="m-content">
                 <header>Firecracker is an open-source virtualization technology that is purpose-built for creating and managing secure, multitenant containers and functions-based services.</header>
                 <section>
-                    <p><a href="https://aws.amazon.com/lambda/">AWS Lambda</a> and <a href="https://aws.amazon.com/fargate/">AWS Fargate</a> are built on Firecracker. Until now, you needed to make a tradeoff between fast startup times and security. Containers offer fast startup times, while VMs offer hardware virtualization-based security boundaries that are more secure. In addition, the memory overhead of existing virtualization technologies makes it difficult to pack a high density of VMs onto a single machine for efficient hardware utilization. Firecracker enables you to deploy workloads in lightweight virtual machines, called microVMs, which combine the security and workload isolation properties of traditional VMs with the speed and resource efficiency of containers. <p/>
-                    <p>Firecracker implements a virtual machine monitor (VMM) based on the Linux Kernel-based Virtual Machine (KVM) to create and manage microVMs. Firecracker has a minimalist design. It excludes unnecessary devices and guest functionality to reduce the memory footprint and attack surface area of each microVM.  This improves security, decreases the startup time, and increases hardware utilization. Firecracker currently supports Intel CPUs, with planned AMD and ARM support. Firecracker will also be integrated with popular container runtimes. Our latest roadmap can be found <a href="https://github.com/firecracker-microvm/firecracker/labels/Roadmap">here</a>.</p>
+                    <p>Firecracker is an open-source virtualization technology that is purpose-built for creating and managing secure, multitenant containers and functions-based services. Until now, you needed to choose between containers with fast startup times and high density, or VMs with strong hardware-virtualization-based security and workload isolation. With Firecracker, you no longer have to choose. Firecracker enables you to deploy workloads in lightweight virtual machines, called microVMs, which provide enhanced security and workload isolation over traditional VMs, while enabling the speed and resource efficiency of containers. Firecracker was developed at Amazon Web Services to improve the customer experience of services like <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> and <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>.<p/>
+                    <p>Firecracker implements a virtual machine monitor (VMM) that uses the Linux Kernel-based Virtual Machine (KVM) to create and manage microVMs. Firecracker has a minimalist design. It excludes unnecessary devices and guest functionality to reduce the memory footprint and attack surface area of each microVM.  This improves security, decreases the startup time, and increases hardware utilization. Firecracker currently supports Intel CPUs, with planned AMD and Arm support. Firecracker will also be integrated with popular container runtimes such as containerd. Our latest roadmap can be found <a href="https://github.com/firecracker-microvm/firecracker/labels/Roadmap">here</a>.</p>
                 </section>
             </article>
         </section>
@@ -101,7 +101,7 @@
                             <img src="img/security-icon@3x.png" alt="Security icon">
                             <header>Security from the ground up</header>
                         </div>
-                        <section>Firecracker microVMs use KVM-based hardware virtualizations that provide the same security isolation as traditional VMs. This ensures that workloads from different end customers can run safely on the same machine. Firecracker also implements a minimal device model that excludes all non-essential functionality and reduces the attack surface area of the microVM. </section>
+                        <section>Firecracker microVMs use KVM-based virtualizations that provide enhanced security over traditional VMs. This ensures that workloads from different end customers can run safely on the same machine. Firecracker also implements a minimal device model that excludes all non-essential functionality and reduces the attack surface area of the microVM.</section>
                     </article>
                     <article class="m-item">
                         <div class="m-header">
@@ -130,7 +130,7 @@
                 </div>
                 <section>
                     <p>Firecracker runs in the user space and leverages the Linux Kernel-based Virtual Machine (KVM) to create microVMs. The fast startup time and low memory overhead of each microVM enables you to pack thousands of microVMs onto the same machine. This means that every function or container group can be encapsulated with a virtual machine barrier, enabling workloads from different customers to run on the same machine, without any tradeoffs to security or efficiency. Firecracker is an alternative to QEMU, an established VMM with a general purpose and broad feature set that allows it to host a variety of guest operating systems.</p>
-                    <p>You can control the Firecracker process via a RESTful API that enables common actions such as configuring the number of vCPUs or starting the machine. It provides built-in rate limiters, which enable the fair sharing of network and storage resources by thousands of microVMs on the same machine. You can create and configure rate limiters via the Firecracker API and define flexible rate limiters that support bursts or specific bandwidth/operations limitations. Firecracker also provides a metadata service that securely shares configuration information between the host and guest operating system. You can set up and configure the metadata service using the Firecracker API.   </p>
+                    <p>You can control the Firecracker process via a RESTful API that enables common actions such as configuring the number of vCPUs or starting the machine. It provides built-in rate limiters, which allows you to granularly control network and storage resources used by thousands of microVMs on the same machine. You can create and configure rate limiters via the Firecracker API and define flexible rate limiters that support bursts or specific bandwidth/operations limitations. Firecracker also provides a metadata service that securely shares configuration information between the host and guest operating system. You can set up and configure the metadata service using the Firecracker API.</p>
                 </section>
             </article>
         </section>
@@ -185,10 +185,6 @@
                             at Amazon Web Services</a> owns project maintainer responsibilities,
                             permissions to merge pull requests, and the ability to create new Firecracker
                             releases.</section>
-                    </article>
-                    <article class="m-item">
-                        <header>Are there plans to make Firecracker an OpenStack or CNCF project?</header>
-                        <section>Not at the moment.</section>
                     </article>
                 </div>
                 <div class="m-banner">
