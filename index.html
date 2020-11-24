@@ -77,7 +77,8 @@
             experience of services like
             <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>
             and
-            <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>.
+            <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>
+            .
           </p>
           <p>
             Firecracker is a virtual machine monitor (VMM) that uses the Linux Kernel-based Virtual Machine (KVM) to
@@ -88,18 +89,30 @@
           </p>
           <p>
             Firecracker is used by/integrated with (in alphabetical order):
-            <a href="https://appfleet.com/">appfleet</a>, containerd via
-            <a href="https://github.com/firecracker-microvm/firecracker-containerd">firecracker-containerd</a>,
-            <a href="https://fly.io">Fly.io</a>,
+            <a href="https://appfleet.com/">appfleet</a>
+            , containerd via
+            <a href="https://github.com/firecracker-microvm/firecracker-containerd">firecracker-containerd</a>
+            ,
+            <a href="https://fly.io">Fly.io</a>
+            ,
             <a
               href="https://github.com/kata-containers/documentation/wiki/Initial-release-of-Kata-Containers-with-Firecracker-support"
-              >Kata Containers</a
-            >, <a href="https://opennebula.io/firecracker/">OpenNebula</a>,
-            <a href="https://github.com/solo-io/unik">UniK</a>, and
-            <a href="https://www.weave.works/oss/firekube/">Weave FireKube</a> (via
-            <a href="https://github.com/weaveworks/ignite">Weave Ignite</a>). Firecracker can run Linux and
-            <a href="http://blog.osv.io/blog/2019/04/19/making-OSv-run-on-firecraker">OSv</a> guests. Our latest roadmap
-            can be found <a href="https://github.com/firecracker-microvm/firecracker/projects/13">here</a>.
+            >
+              Kata Containers
+            </a>
+            ,
+            <a href="https://opennebula.io/firecracker/">OpenNebula</a>
+            ,
+            <a href="https://github.com/solo-io/unik">UniK</a>
+            , and
+            <a href="https://www.weave.works/oss/firekube/">Weave FireKube</a>
+            (via
+            <a href="https://github.com/weaveworks/ignite">Weave Ignite</a>
+            ). Firecracker can run Linux and
+            <a href="http://blog.osv.io/blog/2019/04/19/making-OSv-run-on-firecraker">OSv</a>
+            guests. Our latest roadmap can be found
+            <a href="https://github.com/firecracker-microvm/firecracker/projects/13">here</a>
+            .
           </p>
         </section>
       </article>
@@ -188,8 +201,8 @@
             same machine. This means that every function, container, or container group can be encapsulated with a
             virtual machine barrier, enabling workloads from different customers to run on the same machine, without any
             tradeoffs to security or efficiency. Firecracker is an
-            <a href="https://www.redhat.com/en/blog/all-you-need-know-about-kvm-userspace">alternative to QEMU</a>, an
-            established VMM with a general purpose and broad feature set that allows it to host a variety of guest
+            <a href="https://www.redhat.com/en/blog/all-you-need-know-about-kvm-userspace">alternative to QEMU</a>
+            , an established VMM with a general purpose and broad feature set that allows it to host a variety of guest
             operating systems.
           </p>
           <p>
@@ -219,8 +232,8 @@
               <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>
               to improve resource utilization and customer experience, while providing the security and isolation
               required of public cloud infrastructure. Firecracker started from Chromium OS's Virtual Machine Monitor,
-              <a href="https://chromium.googlesource.com/chromiumos/platform/crosvm/">crosvm</a>, 
-              an open source VMM written in Rust. Today, crosvm and Firecracker have diverged to serve very different
+              <a href="https://chromium.googlesource.com/chromiumos/platform/crosvm/">crosvm</a>
+              , an open source VMM written in Rust. Today, crosvm and Firecracker have diverged to serve very different
               customer needs.
               <a href="https://github.com/rust-vmm">Rust-vmm</a>
               is an open source community where we collaborate with crosvm and other groups and individuals to build and
@@ -231,12 +244,12 @@
             <header>Why did you develop Firecracker?</header>
             <section>
               When we launched Lambda in November of 2014, we were focused on providing a secure
-              <a href="https://aws.amazon.com/serverless/">serverless</a> experience. At launch we used per-customer EC2
-              instances to provide strong security and isolation between customers. As Lambda grew, we saw the need for
-              technology to provide a highly secure, flexible, and efficient runtime environment for services like
-              Lambda and Fargate. Using our experience building isolated EC2 instances with hardware virtualization
-              technology, we started an effort to build a VMM that was tailored to run serverless functions and
-              integrate with container ecosystems.
+              <a href="https://aws.amazon.com/serverless/">serverless</a>
+              experience. At launch we used per-customer EC2 instances to provide strong security and isolation between
+              customers. As Lambda grew, we saw the need for technology to provide a highly secure, flexible, and
+              efficient runtime environment for services like Lambda and Fargate. Using our experience building isolated
+              EC2 instances with hardware virtualization technology, we started an effort to build a VMM that was
+              tailored to run serverless functions and integrate with container ecosystems.
             </section>
           </article>
           <article class="m-item">
@@ -254,16 +267,26 @@
             <header>Can Firecracker be used within the container ecosystem?</header>
             <section>
               Yes. Firecracker is used by/integrated with (in alphabetical order):
-              <a href="https://appfleet.com/">appfleet</a>, containerd via
-              <a href="https://github.com/firecracker-microvm/firecracker-containerd">firecracker-containerd</a>,
-              <a href="https://fly.io">Fly.io</a>,
+              <a href="https://appfleet.com/">appfleet</a>
+              , containerd via
+              <a href="https://github.com/firecracker-microvm/firecracker-containerd">firecracker-containerd</a>
+              ,
+              <a href="https://fly.io">Fly.io</a>
+              ,
               <a
                 href="https://github.com/kata-containers/documentation/wiki/Initial-release-of-Kata-Containers-with-Firecracker-support"
-                >Kata Containers</a
-              >, <a href="https://opennebula.io/firecracker/">OpenNebula</a>,
-              <a href="https://github.com/solo-io/unik">UniK</a>, and
-              <a href="https://www.weave.works/oss/firekube/">Weave FireKube</a> (via
-              <a href="https://github.com/weaveworks/ignite">Weave Ignite</a>).
+              >
+                Kata Containers
+              </a>
+              ,
+              <a href="https://opennebula.io/firecracker/">OpenNebula</a>
+              ,
+              <a href="https://github.com/solo-io/unik">UniK</a>
+              , and
+              <a href="https://www.weave.works/oss/firekube/">Weave FireKube</a>
+              (via
+              <a href="https://github.com/weaveworks/ignite">Weave Ignite</a>
+              ).
             </section>
           </article>
           <article class="m-item">
@@ -285,20 +308,22 @@
             <header>What operating systems are supported by Firecracker?</header>
             <section>
               Firecracker supports Linux host and guest operating systems with kernel versions 4.14 and above, as well
-              as <a href="http://blog.osv.io/blog/2019/04/19/making-OSv-run-on-firecraker/">OSv</a> guests. The
-              long-term support plan is still under discussion.
+              as
+              <a href="http://blog.osv.io/blog/2019/04/19/making-OSv-run-on-firecraker/">OSv</a>
+              guests. The long-term support plan is still under discussion.
             </section>
           </article>
           <article class="m-item">
             <header>What is the open source license for Firecracker?</header>
             <section>
               Firecracker is
-              <a href="https://github.com/firecracker-microvm/firecracker/blob/master/LICENSE">licensed</a> under Apache
-              License, version 2.0, allowing you to freely use, copy, and distribute your changes under the terms of
-              your choice. Read more about the
-              <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a>. Crosvm code sections are
-              licensed under a <a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause license</a> that also
-              allows you to use, copy, and distribute your changes under the terms of your choice.
+              <a href="https://github.com/firecracker-microvm/firecracker/blob/master/LICENSE">licensed</a>
+              under Apache License, version 2.0, allowing you to freely use, copy, and distribute your changes under the
+              terms of your choice. Read more about the
+              <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a>
+              . Crosvm code sections are licensed under a
+              <a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause license</a>
+              that also allows you to use, copy, and distribute your changes under the terms of your choice.
             </section>
           </article>
           <article class="m-item">
@@ -306,15 +331,18 @@
             <section>
               Firecracker is an AWS open source project that encourages contributions from customers and the developer
               community. Any contribution is welcome as long as it aligns with our
-              <a href="https://github.com/firecracker-microvm/firecracker/blob/master/CHARTER.md">charter</a>. You can
-              learn more about how to contribute in
-              <a href="https://github.com/firecracker-microvm/firecracker/blob/master/CONTRIBUTING.md"
-                >CONTRIBUTING.md</a
-              >. You can chat with others in the community on the
+              <a href="https://github.com/firecracker-microvm/firecracker/blob/master/CHARTER.md">charter</a>
+              . You can learn more about how to contribute in
+              <a href="https://github.com/firecracker-microvm/firecracker/blob/master/CONTRIBUTING.md">
+                CONTRIBUTING.md
+              </a>
+              . You can chat with others in the community on the
               <a
                 href="https://join.slack.com/t/firecracker-microvm/shared_invite/enQtNDY2NTUwMzQ3MDE1LWIwMzA0OWFkMTZhMTlmMDZiMmFkYjMyODMxMGQ1ZjliMzJjNjJiNWRhNWNkOGEyNmUxNmRkMjZhYTc3MmVjZjM"
-                >Firecracker Slack workspace</a
-              >.
+              >
+                Firecracker Slack workspace
+              </a>
+              .
             </section>
           </article>
         </div>
