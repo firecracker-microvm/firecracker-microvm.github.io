@@ -34,10 +34,33 @@
       </header>
       <section class="mdl-hero">
         <div class="m-content">
-          <div class="m-title">Secure and fast microVMs for serverless computing</div>
-          <a href="https://github.com/firecracker-microvm/firecracker" class="css-button2 sta-hoverOFF">
-            View on GitHub
-          </a>
+          <div class="m-hero-grid">
+            <div class="m-hero-left">
+              <div class="m-title">Secure and fast microVMs for serverless computing</div>
+              <p class="m-subtitle">
+                Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multi-tenant container and function-based services.
+              </p>
+            </div>
+            <div class="m-hero-right">
+              <div class="m-card">
+                <span class="m-badge m-badge--fire">Open Source</span>
+                <h3>Firecracker VMM</h3>
+                <p>Build your own microVM infrastructure. Full control, Apache 2.0 licensed.</p>
+                <div class="m-card-buttons">
+                  <a href="https://github.com/firecracker-microvm/firecracker" class="m-card-btn sta-hoverOFF">GitHub</a>
+                </div>
+              </div>
+              <div class="m-card">
+                <span class="m-badge m-badge--lambda">Fully Managed</span>
+                <h3>Lambda MicroVMs</h3>
+                <p>Serverless sandboxes with VM-level isolation. Launch, suspend, resume.</p>
+                <div class="m-card-buttons">
+                  <a href="https://aws.amazon.com/lambda/lambda-microvms/" class="m-card-btn m-card-btn--lambda sta-hoverOFF">Docs</a>
+                  <a href="https://s12d.com/mvmws" class="m-card-btn m-card-btn--lambda sta-hoverOFF">Workshop</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -65,51 +88,105 @@
     </div>
     <section class="mdl-article">
       <article class="m-content">
-        <header>
-          Firecracker is an open source virtualization technology that is purpose-built for creating and managing
-          secure, multi-tenant container and function-based services.
-        </header>
-        <section>
-          <p>
-            Firecracker enables you to deploy workloads in lightweight virtual machines, called microVMs, which provide
-            enhanced security and workload isolation over traditional VMs, while enabling the speed and resource
-            efficiency of containers. Firecracker was developed at Amazon Web Services to improve the customer
-            experience of services like
-            <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>
-            and
-            <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>
-            .
-          </p>
-          <p>
-            Firecracker is a virtual machine monitor (VMM) that uses the Linux Kernel-based Virtual Machine (KVM) to
-            create and manage microVMs. Firecracker has a minimalist design. It excludes unnecessary devices and guest
-            functionality to reduce the memory footprint and attack surface area of each microVM. This improves
-            security, decreases the startup time, and increases hardware utilization. Firecracker is generally available on
-            <a href="https://github.com/firecracker-microvm/firecracker#supported-platforms">
-              64-bit Intel, AMD and Arm CPUs with support for hardware virtualization.
-            </a>
-          </p>
-          <p>
-            Firecracker is used by/integrated with (in alphabetical order):
-            <a href="https://appfleet.com/">appfleet</a>,
-            containerd via
-            <a href="https://github.com/firecracker-microvm/firecracker-containerd">firecracker-containerd</a>,
-            <a href="https://fly.io">Fly.io</a>,
-            <a href="https://github.com/kata-containers/documentation/wiki/Initial-release-of-Kata-Containers-with-Firecracker-support">Kata Containers</a>,
-            <a href="https://www.koyeb.com">Koyeb</a>,
-            <a href="https://northflank.com">Northflank</a>,
-            <a href="https://opennebula.io/firecracker/">OpenNebula</a>,
-            <a href="https://www.qovery.com">Qovery</a>,
-            <a href="https://github.com/solo-io/unik">UniK</a>,
-            <a href="https://webapp.io">webapp.io</a>, and
-            <a href="https://github.com/astro/microvm.nix">microvm.nix</a>.
-            Firecracker can run Linux and
-            <a href="http://blog.osv.io/blog/2019/04/19/making-OSv-run-on-firecraker">OSv</a>
-            guests. Our latest roadmap can be found
-            <a href="https://github.com/orgs/firecracker-microvm/projects/42">here</a>.
-          </p>
-        </section>
+        <div class="m-intro-grid">
+          <div class="m-intro-col">
+            <header><span class="m-dot m-dot--fire"></span> Firecracker</header>
+            <section>
+              <p>
+                Firecracker is an open source virtualization technology purpose-built for creating and managing secure,
+                multi-tenant container and function-based services. It enables you to deploy workloads in lightweight
+                virtual machines (microVMs) that provide enhanced security and workload isolation over traditional VMs,
+                while enabling the speed and resource efficiency of containers.
+              </p>
+            </section>
+            <span class="m-tag m-tag--fire">Open Source &middot; Apache 2.0</span>
+          </div>
+          <div class="m-intro-col">
+            <header><span class="m-dot m-dot--lambda"></span> Lambda MicroVMs</header>
+            <section>
+              <p>
+                For teams that want the power of Firecracker without managing infrastructure, Lambda MicroVMs is a fully
+                managed serverless compute primitive. Built on the same Firecracker virtualization powering 15 trillion+
+                monthly Lambda invocations, it provides isolated sandboxes with near-instant launch, state persistence
+                for up to 8 hours, and automatic suspend/resume. No capacity planning required.
+              </p>
+            </section>
+            <span class="m-tag m-tag--lambda">Fully Managed &middot; Serverless</span>
+          </div>
+        </div>
       </article>
+    </section>
+    <section class="mdl-benefits">
+      <div class="m-content">
+        <div id="benefits" name="benefits" class="m-title">Why Firecracker-based MicroVMs?</div>
+        <div class="m-dual-grid">
+          <article class="m-item">
+            <header>Firecracker (Open Source)</header>
+            <div class="m-benefit-item">
+              <div class="m-benefit-num">1</div>
+              <div class="m-benefit-text">
+                <h4>Security by Minimalism</h4>
+                <p>Only 5 emulated devices. Minimal attack surface with KVM-based isolation.</p>
+              </div>
+            </div>
+            <div class="m-benefit-item">
+              <div class="m-benefit-num">2</div>
+              <div class="m-benefit-text">
+                <h4>Speed by Design</h4>
+                <p>Boot in &lt;125ms. Create up to 150 microVMs per second per host.</p>
+              </div>
+            </div>
+            <div class="m-benefit-item">
+              <div class="m-benefit-num">3</div>
+              <div class="m-benefit-text">
+                <h4>Density and Efficiency</h4>
+                <p>&lt;5 MiB overhead per VM. Pack thousands on a single server with built-in rate limiters.</p>
+              </div>
+            </div>
+          </article>
+          <article class="m-item m-item--lambda">
+            <header>Lambda MicroVMs (Managed)</header>
+            <div class="m-benefit-item">
+              <div class="m-benefit-num">1</div>
+              <div class="m-benefit-text">
+                <h4>Zero Infrastructure</h4>
+                <p>Start a MicroVM, connect over HTTP. No capacity planning, no isolation expertise needed.</p>
+              </div>
+            </div>
+            <div class="m-benefit-item">
+              <div class="m-benefit-num">2</div>
+              <div class="m-benefit-text">
+                <h4>Stateful and Persistent</h4>
+                <p>Full memory and disk state preserved for up to 8 hours. Suspend when idle, resume on demand.</p>
+              </div>
+            </div>
+            <div class="m-benefit-item">
+              <div class="m-benefit-num">3</div>
+              <div class="m-benefit-text">
+                <h4>Elastic Scaling</h4>
+                <p>Vertically scale up to 4x baseline during peak. Per-second billing, no charges when suspended.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="mdl-banner mdl-banner--lambda">
+      <div class="m-content">
+        <img class="m-bg" src="img/microvm@3x.png" alt="Lambda MicroVMs" />
+        <div class="m-text">
+          <p>Lambda MicroVMs — isolated, stateful compute sandboxes built on Firecracker.</p>
+          <p>Purpose-built for AI agents, developer platforms, and multi-tenant workloads.</p>
+        </div>
+        <div class="m-buttons">
+          <a href="https://aws.amazon.com/lambda/lambda-microvms/" class="css-button sta-hoverOFF">
+            <span>Lambda MicroVM Documentation</span>
+          </a>
+          <a href="https://s12d.com/mvmws" class="css-button sta-hoverOFF">
+            <span>Lambda MicroVM Workshop</span>
+          </a>
+        </div>
+      </div>
     </section>
     <section class="mdl-banner">
       <div class="m-content">
@@ -117,9 +194,6 @@
         <div class="m-text">
           <p>Firecracker is open-sourced under Apache License, version 2.0.</p>
           <div class="m-imgs">
-            <a href="https://aws.amazon.com/fargate/">
-              <img src="img/fargate-logo.svg" alt="AWS Fargate" />
-            </a>
             <a href="https://aws.amazon.com/lambda/"><img src="img/lambda-logo.svg" alt="AWS Lambda"</a>
           </div>
         </div>
@@ -135,48 +209,6 @@
             <i class="icon-slack" aria-hidden="true"></i>
             <span>Chat about Firecracker on Slack</span>
           </a>
-        </div>
-      </div>
-    </section>
-    <section class="mdl-benefits">
-      <div class="m-content">
-        <div id="benefits" name="benefits" class="m-title">Benefits</div>
-        <div class="m-grid">
-          <article class="m-item">
-            <div class="m-header">
-              <img src="img/security-icon@3x.png" alt="Security icon" />
-              <header>Security from the ground up</header>
-            </div>
-            <section>
-              Firecracker microVMs use KVM-based virtualizations that provide enhanced security over traditional VMs.
-              This ensures that workloads from different end customers can run safely on the same machine. Firecracker
-              also implements a minimal device model that excludes all non-essential functionality and reduces the
-              attack surface area of the microVM.
-            </section>
-          </article>
-          <article class="m-item">
-            <div class="m-header">
-              <img src="img/speed-icon@3x.png" alt="Speed icon" />
-              <header>Speed by design</header>
-            </div>
-            <section>
-              In addition to a minimal device model, Firecracker also accelerates kernel loading and provides a minimal
-              guest kernel configuration. This enables fast startup times. Firecracker initiates user space or
-              application code in as little as 125 ms and supports microVM creation rates of up to 150 microVMs per
-              second per host.
-            </section>
-          </article>
-          <article class="m-item">
-            <div class="m-header">
-              <img src="img/hardware-icon@3x.png" alt="hardware icon" />
-              <header>Scale and efficiency</header>
-            </div>
-            <section>
-              Each Firecracker microVM runs with a reduced memory overhead of less than 5 MiB, enabling a high density
-              of microVMs to be packed on each server. Firecracker provides a rate limiter built into every microVM.
-              This enables optimized sharing of network and storage resources, even across thousands of microVMs.
-            </section>
-          </article>
         </div>
       </div>
     </section>
@@ -222,8 +254,6 @@
             <section>
               Firecracker was built by developers at Amazon Web Services to enable services such as
               <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>
-              and
-              <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>
               to improve resource utilization and customer experience, while providing the security and isolation
               required of public cloud infrastructure. Firecracker started from Chromium OS's Virtual Machine Monitor,
               <a href="https://chromium.googlesource.com/chromiumos/platform/crosvm/">crosvm</a>
@@ -241,7 +271,7 @@
               <a href="https://aws.amazon.com/serverless/">serverless</a>
               experience. At launch we used per-customer EC2 instances to provide strong security and isolation between
               customers. As Lambda grew, we saw the need for technology to provide a highly secure, flexible, and
-              efficient runtime environment for services like Lambda and Fargate. Using our experience building isolated
+              efficient runtime environment for services like Lambda. Using our experience building isolated
               EC2 instances with hardware virtualization technology, we started an effort to build a VMM that was
               tailored to run serverless functions and integrate with container ecosystems.
             </section>
