@@ -1703,7 +1703,8 @@ img {
   }
 }
 .mdl-hero {
-  margin: 60px 0 50px;
+  margin: 60px 0 0;
+  padding-bottom: 90px;
 }
 .mdl-hero .m-content {
   margin: 0 auto;
@@ -1724,7 +1725,8 @@ img {
 }
 @media (max-width: 767px) {
   .mdl-hero {
-    margin: 40px 0 40px;
+    margin: 40px 0 0;
+    padding-bottom: 56px;
   }
   .mdl-hero .m-title {
     font: 700 26px/1.15 'Brown', sans-serif;
