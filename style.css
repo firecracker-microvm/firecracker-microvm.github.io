@@ -408,6 +408,13 @@ img {
   color: #4f483f;
   opacity: .75;
 }
+.mdl-article2 section a {
+  color: #ff542a;
+  text-decoration: underline;
+}
+.mdl-article2 section a:hover {
+  text-decoration: none;
+}
 @media (max-width: 767px) {
   .mdl-article2 section {
     font: 15px/1.67 'Brown', sans-serif;
