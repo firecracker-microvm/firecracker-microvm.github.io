@@ -1666,7 +1666,10 @@
 }
 
 .mdl-hero{
-    margin: 60px 0 50px;
+    margin: 60px 0 0;
+    // Padding, not margin: .mdl-head is not a BFC, so a margin here would
+    // collapse out and the backdrop would stop at the copy.
+    padding-bottom: 90px;
     
     .m-content{
         .maxW(@maxWL);
@@ -1700,7 +1703,8 @@
     // }
     
     @media @smMobileL{
-        margin: 40px 0 40px;
+        margin: 40px 0 0;
+        padding-bottom: 56px;
         
         .m-title{
             font: 700 26px/1.15 @font1;
