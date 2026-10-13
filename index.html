@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -38,7 +38,8 @@
             <div class="m-hero-left">
               <div class="m-title">Secure and fast microVMs for serverless computing</div>
               <p class="m-subtitle">
-                Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multi-tenant container and function-based services.
+                Firecracker is an open source virtualization technology that is purpose-built for creating and managing
+                secure, multi-tenant container and function-based services.
               </p>
             </div>
             <div class="m-hero-right">
@@ -47,15 +48,25 @@
                 <h3>Firecracker VMM</h3>
                 <p>Build your own microVM infrastructure. Full control, Apache 2.0 licensed.</p>
                 <div class="m-card-buttons">
-                  <a href="https://github.com/firecracker-microvm/firecracker" class="m-card-btn sta-hoverOFF">GitHub</a>
+                  <a href="https://github.com/firecracker-microvm/firecracker" class="m-card-btn sta-hoverOFF">
+                    GitHub
+                  </a>
                 </div>
               </div>
               <div class="m-card">
                 <span class="m-badge m-badge--lambda">Fully Managed</span>
                 <h3>AWS Lambda MicroVMs</h3>
-                <p>Serverless compute primitive with VM-level isolation, near-instant launch and resume speeds, and state preservation.</p>
+                <p>
+                  Serverless compute primitive with VM-level isolation, near-instant launch and resume speeds, and state
+                  preservation.
+                </p>
                 <div class="m-card-buttons">
-                  <a href="https://aws.amazon.com/lambda/lambda-microvms/" class="m-card-btn m-card-btn--lambda sta-hoverOFF">Docs</a>
+                  <a
+                    href="https://aws.amazon.com/lambda/lambda-microvms/"
+                    class="m-card-btn m-card-btn--lambda sta-hoverOFF"
+                  >
+                    Docs
+                  </a>
                   <a href="https://s12d.com/mvmws" class="m-card-btn m-card-btn--lambda sta-hoverOFF">Workshop</a>
                 </div>
               </div>
@@ -90,7 +101,10 @@
       <article class="m-content">
         <div class="m-intro-grid">
           <div class="m-intro-col">
-            <header><span class="m-dot m-dot--fire"></span> Firecracker</header>
+            <header>
+              <span class="m-dot m-dot--fire"></span>
+              Firecracker
+            </header>
             <section>
               <p>
                 Firecracker is an open source virtualization technology purpose-built for creating and managing secure,
@@ -102,13 +116,16 @@
             <span class="m-tag m-tag--fire">Open Source &middot; Apache 2.0</span>
           </div>
           <div class="m-intro-col">
-            <header><span class="m-dot m-dot--lambda"></span> AWS Lambda MicroVMs</header>
+            <header>
+              <span class="m-dot m-dot--lambda"></span>
+              AWS Lambda MicroVMs
+            </header>
             <section>
               <p>
-                For teams that want the capabilities of Firecracker without managing infrastructure, Lambda MicroVMs is a fully
-                managed serverless compute primitive. Built on the same Firecracker virtualization powering 15 trillion+
-                monthly Lambda function invocations, it provides isolated sandboxes with near-instant launch, state persistence
-                for up to 8 hours, and automatic suspend/resume. No capacity planning required.
+                For teams that want the capabilities of Firecracker without managing infrastructure, Lambda MicroVMs is
+                a fully managed serverless compute primitive. Built on the same Firecracker virtualization powering 15
+                trillion+ monthly Lambda function invocations, it provides isolated sandboxes with near-instant launch,
+                state persistence for up to 8 hours, and automatic suspend/resume. No capacity planning required.
               </p>
             </section>
             <span class="m-tag m-tag--lambda">Fully Managed &middot; Serverless</span>
@@ -164,7 +181,10 @@
               <div class="m-benefit-num">3</div>
               <div class="m-benefit-text">
                 <h4>Elastic Scaling</h4>
-                <p>Vertically scale up to 4x baseline during peak. Per-second billing, and no compute charges while suspended.</p>
+                <p>
+                  Vertically scale up to 4x baseline during peak. Per-second billing, and no compute charges while
+                  suspended.
+                </p>
               </div>
             </div>
           </article>
@@ -280,9 +300,9 @@
               <a href="https://aws.amazon.com/serverless/">serverless</a>
               experience. At launch we used per-customer EC2 instances to provide strong security and isolation between
               customers. As Lambda grew, we saw the need for technology to provide a highly secure, flexible, and
-              efficient runtime environment for services like Lambda. Using our experience building isolated
-              EC2 instances with hardware virtualization technology, we started an effort to build a VMM that was
-              tailored to run serverless functions and integrate with container ecosystems.
+              efficient runtime environment for services like Lambda. Using our experience building isolated EC2
+              instances with hardware virtualization technology, we started an effort to build a VMM that was tailored
+              to run serverless functions and integrate with container ecosystems.
             </section>
           </article>
           <article class="m-item">
@@ -299,20 +319,35 @@
           <article class="m-item">
             <header>Can Firecracker be used within the container ecosystem?</header>
             <section>
-              Yes. Firecracker is used by/integrated with (in alphabetical order):
-              containerd via
-              <a href="https://github.com/firecracker-microvm/firecracker-containerd">firecracker-containerd</a>,
-              <a href="https://e2b.dev">E2B</a>,
-              <a href="https://fly.io">Fly.io</a>,
-              <a href="https://github.com/kata-containers/kata-containers/blob/main/docs/hypervisors.md">Kata Containers</a>,
-              <a href="https://www.koyeb.com">Koyeb</a>,
-              <a href="https://northflank.com">Northflank</a>,
-              <a href="https://opennebula.io/firecracker/">OpenNebula</a>,
-              <a href="https://www.pandastack.ai">PandastackAI</a>,
-              <a href="https://www.qovery.com">Qovery</a>,
-              <a href="https://github.com/solo-io/unik">UniK</a>,
-              <a href="https://webapp.io">webapp.io</a>, and
-              <a href="https://github.com/astro/microvm.nix">microvm.nix</a>.
+              Yes. Firecracker is used by/integrated with (in alphabetical order): containerd via
+              <a href="https://github.com/firecracker-microvm/firecracker-containerd">firecracker-containerd</a>
+              ,
+              <a href="https://e2b.dev">E2B</a>
+              ,
+              <a href="https://fly.io">Fly.io</a>
+              ,
+              <a href="https://github.com/kata-containers/kata-containers/blob/main/docs/hypervisors.md">
+                Kata Containers
+              </a>
+              ,
+              <a href="https://www.koyeb.com">Koyeb</a>
+              ,
+              <a href="https://lizard.build/sandboxes">Lizard Sandboxes</a>
+              ,
+              <a href="https://northflank.com">Northflank</a>
+              ,
+              <a href="https://opennebula.io/firecracker/">OpenNebula</a>
+              ,
+              <a href="https://www.pandastack.ai">PandastackAI</a>
+              ,
+              <a href="https://www.qovery.com">Qovery</a>
+              ,
+              <a href="https://github.com/solo-io/unik">UniK</a>
+              ,
+              <a href="https://webapp.io">webapp.io</a>
+              , and
+              <a href="https://github.com/astro/microvm.nix">microvm.nix</a>
+              .
             </section>
           </article>
           <article class="m-item">
@@ -363,9 +398,7 @@
                 CONTRIBUTING.md
               </a>
               . You can chat with others in the community on the
-              <a
-                href="https://join.slack.com/t/firecracker-microvm/shared_invite/zt-3v81btcpe-usCf8Qk7k1gUlSAEKKdYMg"
-              >
+              <a href="https://join.slack.com/t/firecracker-microvm/shared_invite/zt-3v81btcpe-usCf8Qk7k1gUlSAEKKdYMg">
                 Firecracker Slack workspace
               </a>
               .
